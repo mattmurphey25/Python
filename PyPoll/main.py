@@ -1,9 +1,9 @@
 import csv
 import os
 
-path_1 = "C:\\Users\\mattm\\python-challenge\\PyPoll\\Resources\\raw_data\\election_data_1.csv"
+path_1 = os.path.join("Resources", "raw_data", "election_data_1.csv")
 
-path_2 = "C:\\Users\\mattm\\python-challenge\\PyPoll\\Resources\\raw_data\\election_data_2.csv"
+path_2 = os.path.join("Resources", "raw_data", "election_data_2.csv")
 
 voter_num = 0
 candidate_list = []
@@ -85,6 +85,6 @@ print("---------------------------")
 text7 = "---------------------------"
 text_full = text1 + "\n" + text2 + "\n" + text3 + "\n" + text4a + "\n" + text4b + "\n" + text4c + "\n" + text4c + "\n" + text4d + "\n" + text4e + "\n" + text4f + "\n" + text4g + "\n" + text4h + "\n" + text5 + "\n" + text6 + "\n" + text7
 
-txtpath = "C:\\Users\\mattm\\python-challenge\\PyPoll\\output\\results.txt"
+txtpath = os.path.join("output", "results.txt")
 with open(txtpath, "w") as txtfile:
     txtfile.write(text_full)
